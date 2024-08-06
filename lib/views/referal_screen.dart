@@ -22,7 +22,7 @@ class ReferalScreen extends StatelessWidget {
                 height: height * 0.23,
                 width: width * 0.9,
                 decoration: BoxDecoration(
-                    gradient: LinearGradient(
+                    gradient: const LinearGradient(
                       colors: [
                         AppColors.gradient1,
                         AppColors.gradient2,
@@ -34,11 +34,11 @@ class ReferalScreen extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    Text('Get 50 coins each \nInvite your friends ',style: TextStyle(color: AppColors.purewhite,fontSize: 16,fontWeight: FontWeight.w600),),
+                    const Text('Get 50 coins each \nInvite your friends ',style: TextStyle(color: AppColors.purewhite,fontSize: 16,fontWeight: FontWeight.w600),),
                     Container(
                       width: width * 0.30,
                       height: height * 0.30,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: AppColors.purewhite,
                         shape: BoxShape.circle,
                         boxShadow: [
@@ -53,16 +53,16 @@ class ReferalScreen extends StatelessWidget {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                          Text('Get',style: TextStyle(color: AppColors.blue),),
+                          const Text('Get',style: TextStyle(color: AppColors.blue),),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                           
                             Image.asset('assets/image/Icon.png',height: height*0.035,fit: BoxFit.cover,),
-                              Text('50',style: TextStyle(fontSize: 20,fontWeight: FontWeight.w800,color: AppColors.blue),),
+                              const Text('50',style: TextStyle(fontSize: 20,fontWeight: FontWeight.w800,color: AppColors.blue),),
                               
                           ],),
-                          Text('Coin',style: TextStyle(fontSize: 18,fontWeight: FontWeight.w800,color: AppColors.blue),)
+                          const Text('Coin',style: TextStyle(fontSize: 18,fontWeight: FontWeight.w800,color: AppColors.blue),)
                         ],),
                       ),
                     ),
@@ -73,7 +73,7 @@ class ReferalScreen extends StatelessWidget {
             SizedBox(
               height: height * 0.025,
             ),
-            Center(
+            const Center(
               child: Text(
                 'Invite your friend, and both of you will get\n 50 coins for free',
                 textAlign: TextAlign.center,
@@ -83,7 +83,7 @@ class ReferalScreen extends StatelessWidget {
             SizedBox(
               height: height * 0.02,
             ),
-            Text(
+            const Text(
               'Share your Referral code',
               style: TextStyle(fontSize: 14, color: AppColors.grey),
             ),
@@ -98,13 +98,13 @@ class ReferalScreen extends StatelessWidget {
                 color: AppColors.purewhite,
               ),
               child:DottedBorder(
-            color: AppColors.grey, // Change to your preferred color
+            color: AppColors.grey, 
             strokeWidth: 1,
             borderType: BorderType.RRect,
-            radius: Radius.circular(12),
-            dashPattern: [6, 3], // Adjust the dash pattern
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
+            radius: const Radius.circular(12),
+            dashPattern: const [6, 3], 
+            child: const Padding(
+              padding: EdgeInsets.all(8.0),
               child: Center(
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -112,14 +112,14 @@ class ReferalScreen extends StatelessWidget {
                     Text(
                       '98665485XYS',
                       style: TextStyle(
-                        color:AppColors.blue, // Use your color here
+                        color:AppColors.blue, 
                         fontSize: 16,
                         fontWeight: FontWeight.w600,
                       ),
                     ),
                     Icon(
                       Icons.copy_outlined,
-                      color: AppColors.blue, // Use your color here
+                      color: AppColors.blue, 
                     ),
                   ],
                 ),
@@ -135,8 +135,8 @@ class ReferalScreen extends StatelessWidget {
                 decoration: BoxDecoration(
                     color: AppColors.purewhite,
                     borderRadius: BorderRadius.circular(12)),
-                child: Padding(
-                  padding: const EdgeInsets.all(10.0),
+                child: const Padding(
+                  padding: EdgeInsets.all(10.0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [

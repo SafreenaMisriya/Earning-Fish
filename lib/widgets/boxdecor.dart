@@ -1,7 +1,8 @@
+
 import 'package:earning_fish/utils/constant.dart';
 import 'package:flutter/material.dart';
 
- buildServiceCard(String image, String title) {
+ buildServiceCard(String image, String title ,double height,double width) {
     return Card(
       elevation: 0.0,
       color: AppColors.whitecolor,
@@ -14,15 +15,15 @@ import 'package:flutter/material.dart';
           children: [
             Image.asset(image),
             
-            const SizedBox(height: 16.0),
+             SizedBox(height: height*0.02),
             Text(title,style: const TextStyle(fontSize: 17,fontWeight: FontWeight.w800),),
-            const SizedBox(height: 8.0),
+            SizedBox(height: height*0.01),
             Center(
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   const Text('Earn upto 785', style: TextStyle(color: AppColors.black)),
-                  const SizedBox(width: 5,),
+                   SizedBox(width: width*0.01),
                   Image.asset('assets/image/Icon.png')
                 ],
               ),
@@ -32,7 +33,7 @@ import 'package:flutter/material.dart';
       ),
     );
   }
-    Widget buildLeadStatus(String status, String count) {
+    Widget buildLeadStatus(String status, String count,double height,double width) {
     return Column(
       crossAxisAlignment:CrossAxisAlignment.center,
       children: [
@@ -40,15 +41,12 @@ import 'package:flutter/material.dart';
           count,
           style: const TextStyle(color: Colors.white, fontSize: 18.0),
         ),
-        const SizedBox(height: 4.0),
-        SizedBox(
-          width: 65,
-          height: 75,
-          child: Text(
+         SizedBox(height:height*0.01 ),
+       Text(
             status,
             style: const TextStyle(color: Colors.white, fontSize: 11.0,fontWeight: FontWeight.w600,),
           ),
-        ),
+        
       ],
     );
   }
