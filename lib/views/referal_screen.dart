@@ -130,7 +130,7 @@ class ReferalScreen extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(20),
               child: Container(
-                height: height * 0.34,
+                height: height * 0.35,
                 width: double.infinity,
                 decoration: BoxDecoration(
                     color: AppColors.purewhite,
