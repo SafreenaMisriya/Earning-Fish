@@ -1,7 +1,6 @@
 import 'dart:async';
-
 import 'package:earning_fish/utils/constant.dart';
-import 'package:earning_fish/views/home_screen.dart';
+import 'package:earning_fish/widgets/bottom_navigationbar.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatelessWidget {
@@ -11,10 +10,9 @@ class SplashScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     Timer(const Duration(seconds: 3), () {
       Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (context) => const HomeScreen()), 
+        MaterialPageRoute(builder: (context) => Bottomnavigationbar ()), 
       );
     });
-
     return Scaffold(
       body: Scaffold(
         body: Container(
